@@ -1,0 +1,24 @@
+a.link {
+    color: $link-color;
+    cursor: pointer;
+    font-weight: $font-weight-normal;
+    text-decoration: $link-decoration;
+
+    @include hover() {
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
+    }
+
+    &:focus,
+    &.focus {
+        box-shadow: none;
+        outline: 0;
+        text-decoration: $link-hover-decoration;
+    }
+
+    &:disabled,
+    &.disabled {
+        color: $btn-link-disabled-color;
+        pointer-events: none;
+    }
+}

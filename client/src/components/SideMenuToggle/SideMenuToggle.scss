@@ -1,0 +1,17 @@
+.menu-button {
+    border: 2px solid $light;
+    border-radius: 30px;
+    height: 50px;
+    opacity: 1;
+    width: 126px;
+
+    .logo {
+        height: 32px;
+        margin-right: 10px;
+        width: 32px;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

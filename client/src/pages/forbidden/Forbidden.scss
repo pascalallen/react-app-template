@@ -1,0 +1,25 @@
+.forbidden-container {
+    .forbidden-image-container {
+        margin-top: 120px;
+    }
+
+    .logo-container {
+        margin-top: 50px;
+    }
+
+    .forbidden-header {
+        margin-top: 35px;
+    }
+
+    .forbidden-back-button {
+        height: 50px;
+        margin-top: 20px;
+        width: 200px;
+    }
+
+    .forbidden-help-text {
+        color: $gray-600;
+        margin-top: 20px;
+        width: 580px;
+    }
+}

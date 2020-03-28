@@ -1,0 +1,139 @@
+.group-container {
+    .header-container {
+        .side-nav-open-button {
+            left: 30px;
+            top: 30px;
+        }
+
+        .header {
+            margin-bottom: 66px;
+            margin-top: 122px;
+        }
+
+        .student-search-input-group {
+            margin-bottom: 124px;
+            margin-right: 50px;
+            width: 260px;
+
+            .input-group-prepend {
+                height: 36px;
+
+                .search-submit-button {
+                    background-color: $gray-200;
+                    color: $input-placeholder-color;
+
+                    &:focus, &:hover {
+                        outline: none;
+                    }
+                }
+
+                .input-group-text {
+                    border-bottom-left-radius: $btn-border-radius;
+                    border-top-left-radius: $btn-border-radius;
+                    padding: 7px;
+                }
+
+                .input-group-text-focus {
+                    border: 2px solid $black;
+                    padding: 5px 7px 5px 5px;
+                }
+            }
+
+            .student-search-input-field {
+                height: 36px;
+
+                &:focus {
+                    border: 2px solid $black;
+                }
+            }
+
+            .input-group-append {
+                height: 36px;
+
+                .search-clear-button {
+                    background-color: $gray-200;
+                    color: $input-placeholder-color;
+
+                    &:focus, &:hover {
+                        outline: none;
+                    }
+                }
+
+                .input-group-text {
+                    border-bottom-right-radius: $btn-border-radius;
+                    border-top-right-radius: $btn-border-radius;
+                    padding: 7px;
+                }
+
+                .input-group-text-focus {
+                    border: 2px solid $black;
+                    padding: 5px 5px 5px 7px;
+                }
+            }
+        }
+    }
+
+    .body-container {
+        background-color: $gray-100;
+        padding: 0 50px 100px 50px;
+
+        .students-header-bar-container {
+            margin-top: 30px;
+
+            .name-sort-btn {
+                border: 2px solid $gray-200;
+                font-size: 13px;
+                outline: none;
+                padding: 13px 20px;
+            }
+        }
+
+        .students-container {
+            .student-row-btn {
+                border: 2px solid $light;
+                margin-top: 20px;
+                padding: 26px 30px;
+                outline: none;
+
+                &:focus {
+                    outline: none;
+                }
+
+                .row-left {
+                    .student-initials-bubble {
+                        background-color: $gray-200;
+                        height: 36px;
+                        margin-right: 20px;
+                        width: 36px;
+                    }
+
+                    .student-initials-text {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+        .pagination-container {
+            margin-top: 22px;
+
+            .pagination-left {
+                .pagination-text {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .not-found-container {
+            margin-top: 60px;
+
+            .not-found-header {
+                margin-top: 30px;
+            }
+
+            .not-found-subheader {
+                margin-top: 15px;
+            }
+        }
+    }
+}

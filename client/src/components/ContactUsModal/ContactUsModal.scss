@@ -1,0 +1,27 @@
+.contact-us-modal {
+    margin-top: 200px;
+
+    .modal-dialog {
+        max-width: 580px;
+
+        .modal-content {
+            border-radius: 20px;
+
+            .modal-header {
+                .close {
+                    padding-right: 25px;
+                    padding-top: 20px;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            .modal-body-caption {
+                margin-left: 90px;
+                margin-right: 90px;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@import 'activate/Activate';
+@import 'admin/docs/roles/RolesDocument';
+@import 'admin/dashboard/AdminDashboard';
+@import 'admin/employees/register/RegisterEmployee';
+@import 'admin/institutions/register/RegisterInstitution';
+@import 'forbidden/Forbidden';
+@import 'home/Home';
+@import 'institutions/dashboard/InstitutionsDashboard';
+@import 'institutions/onboarding/Onboarding';
+@import 'institutions/student/Student';
+@import 'login/Login';
+@import 'request-reset/RequestReset';
+@import 'request-reset-complete/RequestResetComplete';
+@import 'reset-password/ResetPassword';
+@import 'server-error/ServerError';
+@import 'welcome/Welcome';

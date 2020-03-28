@@ -1,0 +1,63 @@
+.onboarding-error-page-container {
+    .heading-title {
+        margin-top: 56px;
+    }
+
+    .body-title {
+        margin-top: 60px;
+    }
+
+    .body-text {
+        color: $gray-600;
+        margin: 20px auto 40px;
+        max-width: 580px;
+    }
+
+    .graphic-container {
+        margin-top: 43px;
+    }
+
+    .graphic-placeholder {
+        margin-bottom: 40px;
+    }
+
+    .info-notification-container {
+        margin-bottom: 20px;
+
+        .info-notification-img {
+            height: 20px;
+            width: 20px;
+            margin-right: 10px;
+        }
+    }
+
+    .reupload-button-container {
+        margin-top: 32px;
+    }
+
+    .reupload-button {
+        margin-right: 10px;
+        min-width: 201px;
+    }
+
+    .reupload-button-text {
+        text-overflow: ellipsis;
+    }
+
+    .onboarding-table-container {
+        margin-bottom: 40px;
+
+        .onboarding-table {
+            .onboarding-table-tbody {
+                .badge {
+                    height: 36px;
+                    width: 96px;
+                }
+
+                .disabled {
+                    opacity: 0.3;
+                }
+            }
+        }
+    }
+}
