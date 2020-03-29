@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 // bootstrap override settings
-@import 'assets/scss/settings/bootstrap';
+@import 'assets/scss/bootstrap';
 
 // bootstrap library
 @import '~bootstrap/scss/bootstrap';
@@ -15,10 +15,6 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '~@fortawesome/fontawesome-free/scss/solid';
 @import '~@fortawesome/fontawesome-free/scss/v4-shims';
 
-// global styles
-@import 'assets/scss/global';
-// router
-@import 'router/router';
 // components
 @import 'components/components';
 // pages
