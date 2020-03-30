@@ -1,8 +1,15 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { RootState } from '@/types/redux';
+import { login, State as UserState } from '@/redux/userSlice';
 import Table from '@/components/Table/Table';
 import DogeImg from '@/assets/images/doge.png';
 
-const Home = () => {
+type Props = {
+  user: UserState;
+};
+
+const Home = (props: Props) => {
   return (
     <div className="container">
       <div className="row">
@@ -18,4 +25,10 @@ const Home = () => {
   );
 };
 
-export default Home;
+const mapStateToProps = (state: RootState) => ({
+  user: state.user
+});
+
+const mapDispatchToProps = { login };
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

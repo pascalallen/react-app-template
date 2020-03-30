@@ -8,8 +8,9 @@
   },
   "author": "Pascal Allen <pascal.allen88@gmail.com>",
   "dependencies": {
-    "axios": "^0.19.2",
     "@fortawesome/fontawesome-free": "^5.12.1",
+    "@reduxjs/toolkit": "^1.3.2",
+    "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
     "http-status-codes": "^1.4.0",
     "react": "^16.13.1",
