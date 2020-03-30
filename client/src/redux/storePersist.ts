@@ -1,9 +1,19 @@
+import _ from 'lodash';
 import { RootState } from '@/types/redux';
 import { AnyObject } from '@/types/common';
+
+const stateKeysToPersist: { [key: string]: boolean } = {
+  fundings: true
+};
 
 const saveState = (rootState: RootState): void => {
   try {
     const stateToPersist: AnyObject = {};
+    _.forEach(rootState, (reducerState, stateKey) => {
+      if (!!stateKeysToPersist[stateKey]) {
+        stateToPersist[stateKey] = reducerState;
+      }
+    });
     const serializedState = JSON.stringify(stateToPersist);
     localStorage.setItem('state', serializedState);
   } catch (error) {

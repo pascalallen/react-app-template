@@ -57,7 +57,6 @@
     "ci": "yarn install --frozen-lockfile",
     "start:dev": "webpack-dev-server --open",
     "lint": "eslint './src/**/*.{ts,tsx}'",
-    "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix",
-    "test": "jest"
+    "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix"
   }
 }
