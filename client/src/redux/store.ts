@@ -1,14 +1,19 @@
-import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
-import thunk from 'redux-thunk';
-import userReducer from '@/redux/user/userReducer';
+import { applyMiddleware, compose } from 'redux';
+import thunk, { ThunkAction } from 'redux-thunk';
+import { configureStore, Action } from '@reduxjs/toolkit';
 import storePersist from '@/redux/storePersist';
-
-const rootReducer = combineReducers({
-  user: userReducer
-});
+import rootReducer, { RootState } from '@/redux/rootReducer';
 
 const composeEnhancers = (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const store = createStore(rootReducer, storePersist.loadState(), composeEnhancers(applyMiddleware(thunk)));
+const store = configureStore({
+  reducer: rootReducer,
+  preloadedState: storePersist.loadState(),
+  // enhancers: composeEnhancers(applyMiddleware(thunk))
+});
+
+export type AppDispatch = typeof store.dispatch;
+
+export type AppThunk = ThunkAction<void, RootState, unknown, Action<string>>;
 
 export default store;

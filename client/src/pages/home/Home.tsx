@@ -1,8 +1,19 @@
 import React from 'react';
+import { connect, useDispatch } from 'react-redux';
+import { RootState } from '@/types/redux';
+import { login, State as UserState } from '@/redux/userSlice';
 import Table from '@/components/Table/Table';
 import DogeImg from '@/assets/images/doge.png';
 
+type Props = {
+  user: UserState;
+};
+
 const Home = () => {
+  const dispatch = useDispatch();
+
+  dispatch(login({ email: 'test', password: 'test' }));
+
   return (
     <div className="container">
       <div className="row">
@@ -18,4 +29,10 @@ const Home = () => {
   );
 };
 
-export default Home;
+const mapStateToProps = (state: RootState) => ({
+  user: state.user
+});
+
+const mapDispatchToProps = { login };
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
