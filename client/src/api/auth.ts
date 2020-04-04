@@ -4,11 +4,7 @@ import httpMethod from '@/constants/httpMethod';
 import { ApiResponse } from '@/types/api';
 import { UserData } from '@/types/data';
 
-const login = async (params: {
-  email: string;
-  password: string;
-  remember_me: boolean;
-}): Promise<ApiResponse<UserData>> => {
+const login = async (params: { email: string; password: string }): Promise<ApiResponse<UserData>> => {
   return apiRequest.send({ method: httpMethod.POST, uri: apiUrl.URL_AUTH_LOGIN, body: params });
 };
 

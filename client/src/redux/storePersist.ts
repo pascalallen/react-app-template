@@ -38,6 +38,7 @@ const loadState = (): AnyObject | undefined => {
 };
 
 export default Object.freeze({
+  stateKeysToPersist,
   saveState,
   loadState
 });

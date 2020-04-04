@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import { connect, useDispatch } from 'react-redux';
 import { RootState } from '@/types/redux';
 import { login, State as UserState } from '@/redux/userSlice';
 import Table from '@/components/Table/Table';
@@ -9,7 +9,11 @@ type Props = {
   user: UserState;
 };
 
-const Home = (props: Props) => {
+const Home = () => {
+  const dispatch = useDispatch();
+
+  dispatch(login({ email: 'test', password: 'test' }));
+
   return (
     <div className="container">
       <div className="row">
